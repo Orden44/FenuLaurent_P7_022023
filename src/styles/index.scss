@@ -1,0 +1,15 @@
+//---> Application des styles <---\\
+
+//---> Généraux
+@import "./base/base";
+
+//---> Pages
+@import "./pages/error";
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/logement";
+
+//---> Composants
+@import "./components/footer";
+@import "./components/header";
+@import "./components/banner";

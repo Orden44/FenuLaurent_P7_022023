@@ -1,0 +1,35 @@
+.ks-banner {
+	color: black;
+	text-align: right;
+	padding: 32px;
+	border-bottom: solid 3px black;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+}
+
+.ks-header {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.ks-title {
+	padding-left: 32px;
+}
+
+.header ul { 
+	display:flex;
+	flex-direction: row; 
+	list-style: none;
+  }
+
+.header a { 
+    text-decoration: none;
+    color: #FF6060;  
+	padding: 0 25px 0 25px; 
+
+}
