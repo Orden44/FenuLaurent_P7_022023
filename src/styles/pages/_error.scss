@@ -1,0 +1,35 @@
+.error__page {
+        text-align: center;
+        color: $color-primary;
+  
+    h1 {
+        font-weight: 700;
+        font-size: 288px;
+        line-height: 142.6%;
+        margin: 0;
+        @media screen and (max-width: 800px) {
+        font-size: 96px;
+        }
+    }
+  
+    span {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+        font-size: 36px;
+        margin: 0 50px 0;
+        @media screen and (max-width: 800px) {
+        font-size: 18px;
+        }
+    }
+  }
+  
+  .backlink {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        text-decoration-line: underline;
+        color: $color-primary;
+        margin: 150px 0 150px;
+    }

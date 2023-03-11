@@ -1,9 +1,9 @@
 .header {
-    margin: 3% 5% 3% 5%;
+    margin: 20px 80px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  
+    justify-content:space-between;
+    align-items: center;
+
     a {
       text-decoration: none;
     }
@@ -15,28 +15,22 @@
   
     &__navigation {
       ul {
+        padding: 0;
         display: flex;
-        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
         list-style: none;
   
         li {
-//          color: $color-1;
-          padding-left: 100px;
-          padding-right: 15px;
-          padding-top: 30px;
-          margin-top: 3%;
-          margin-left: 12px;
-  
-//          font-family: $font-1;
+          color: $color-primary;
+          padding-left: 50px;  
           font-weight: 500;
           font-size: 24px;
-          line-height: 142.6%;
-          /* or 34px */
         }
       }
     }
   }
-  
+ 
   .nav-active {
     li {
       text-decoration: underline;
@@ -45,23 +39,36 @@
   
   @media screen and (max-width: 800px) {
     .header {
-      width: 95%;
       margin: auto;
+      width: 94%;
   
       &__logo {
         width: 120px;
+        margin: 20px;
       }
   
       &__navigation {
         ul {
-          justify-content: flex-start;
+          margin-right: 20px;
           li {
-            padding-left: 0;
-            padding-top: 0;
-            font-size: 12px;
+           font-size: 12px;
+           text-transform: uppercase;
+           padding-left: 10px;
           }
         }
       }
     }
   }
-  
+  @media screen and (max-width: 320px) {
+    .header {
+      width: 100%;
+      &__logo {
+        margin: 15px;
+      }
+      &__navigation {
+        ul {
+          margin-right: 10px;
+        }
+      }
+    }
+  }

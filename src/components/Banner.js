@@ -1,8 +1,16 @@
-import React from "react";
-import '../styles/components/_banner.csss';
+// import React from "react";
 
-function Banner({ children }) {
-	return <div className='lmj-banner'>{children}</div>
-};
+const Banner = ({ cover, title }) => {
+	return (
+	  <div className="homebanner">
+		<img
+		  src={cover}
+		  alt="illustration bannière"
+		  className="homebanner__img"
+		/>
+		<h1 className="homebanner__title">{title}</h1>
+	  </div>
+	);
+  };
 
 export default Banner;
