@@ -1,10 +1,5 @@
-.thumb{
-    display: flex;
-//    width: 27%;
-    @media screen and (max-width: 800px) {
-//      width: 100%;
-    }
-    
+.thumb {
+    display: flex;    
   }
   
   .thumb__card {
@@ -25,8 +20,6 @@
       background: none;
     }
 
-  
-  
     &__link{
       text-decoration: none;
       width: inherit;
@@ -60,7 +53,6 @@
       @media screen and (max-width: 800px) {
         top: 73.73%
       }
-
     }
   }
   
