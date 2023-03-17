@@ -16,7 +16,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-{/*     <Route path="/error" element={<NoMatch />} /> */}
         <Route path="/logement/:logementId" element={<Logement />} /> 
         <Route path="*" element={<NoMatch />} />
       </Routes>
