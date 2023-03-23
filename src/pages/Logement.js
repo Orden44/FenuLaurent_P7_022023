@@ -17,49 +17,49 @@ const Logement = () => {
         return <Tag key={index} tag={tag} />;
       });
       const equipmentsDescription = oneLogement.equipments.map((equipment, index) => {
-          return <li key={index}>{equipment}</li>;
-        });
+        return <li key={index}>{equipment}</li>;
+      });
     
       return (
-              <div className="logement__page">
-                <Carroussel images={oneLogement.pictures} />
-                <div className="ficheLogement">
-                  <div className="ficheLogement__info">
-                    <span className="ficheLogement__info__title">
-                      {oneLogement.title}
-                    </span>
-                    <span className="ficheLogement__info__location">
-                      {oneLogement.location}
-                    </span>
-                    <div className="tags">{tags}</div>  
-                  </div>
-                  <div className="ficheLogement__owner">
-                    <div className="ficheLogement__owner__info">
-                      <span className="ownerName">{oneLogement.host.name}</span>
-                      <img
-                        className="profilpicture"
-                        src={oneLogement.host.picture}
-                        alt="Profil propriétaire"
-                      />
-                    </div>
-                  <div className="stars">
-                    <Rate rating={oneLogement.rating} />
-                  </div>  
-                  </div>
-                </div>
-                <div className="ficheLogement__description">
-                  <Collapse
-                    titre="Description"
-                    description={oneLogement.description}
-                  />
-                <Collapse
-                    titre="Équipements"
-                    description={equipmentsDescription}
-                  />  
-                </div>
+        <div className="logement__page">
+          <Carroussel images={oneLogement.pictures} />
+          <div className="ficheLogement">
+            <div className="ficheLogement__info">
+              <span className="ficheLogement__info__title">
+                {oneLogement.title}
+              </span>
+              <span className="ficheLogement__info__location">
+                {oneLogement.location}
+              </span>
+              <div className="tags">{tags}</div>  
+            </div>
+            <div className="ficheLogement__owner">
+              <div className="ficheLogement__owner__info">
+                <span className="ownerName">{oneLogement.host.name}</span>
+                <img
+                  className="profilpicture"
+                  src={oneLogement.host.picture}
+                  alt="Profil propriétaire"
+                />
               </div>
-            ) 
+              <div className="stars">
+                <Rate rating={oneLogement.rating} />
+              </div>  
+            </div>
+          </div>
+          <div className="ficheLogement__description">
+            <Collapse
+              titre="Description"
+              description={oneLogement.description}
+            />
+            <Collapse
+              titre="Équipements"
+              description={equipmentsDescription}
+            />  
+          </div>
+        </div>
+      ) 
     }
-}  
+  }  
 
 export default Logement;

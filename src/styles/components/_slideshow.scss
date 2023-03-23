@@ -65,7 +65,9 @@
         height: inherit;
       }
     }
+  }
   
+  @media screen and (max-width: 425px) {  
     .fleche {
       width: 15px;
     }
@@ -78,4 +80,3 @@
       margin-right: 5px;
     }
   }
-  
